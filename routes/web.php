@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 # 一般路由
-Route::get('/', 'StaticPagesController@home');
-Route::get('/help', 'StaticPagesController@help');
-Route::get('/about', 'StaticPagesController@about');
+Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/help', 'StaticPagesController@help')->name('help');
+Route::get('/about', 'StaticPagesController@about')->name('about');
+
+# 微博
+Route::namespace('Weibo')->group(function () {
+    Route::get('/weibo', 'WeiboController@home')->name('weibo');
+});
