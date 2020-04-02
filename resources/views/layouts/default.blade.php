@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title', '去吧！皮卡丘！～') - learn_laravel</title>
-    @include('layouts._header')
+    @include('layouts._head')
 </head>
 <body>
-    @yield('content')
+    @include('layouts._header')
 
-    @include('layouts._footer')
+    <div class="container">
+        @yield('content')
+        @include('layouts._footer')
+    </div>
+
+    @include('layouts._footer_js')
 </body>
 </html>

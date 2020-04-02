@@ -1,22 +1,17 @@
 @extends('layouts.default')
 
+@section('head')
+    @include('weibo.layouts._head')
+@stop
+
 @section('header')
-<link rel="stylesheet" href="{{ mix('css/weibo/app.css') }}">
+    @include('weibo.layouts._header')
 @stop
 
 @section('content')
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('weibo') }}">微博应用</a>
-            <ul class="navbar-nav justify-content-end">
-                <li class="nav-item"><a class="nav-link" href="{{ route('help') }}">帮助</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">登录</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">首页</a></li>
-            </ul>
-        </div>
-    </nav>
+    @yield('weibo_content')
+@stop
 
-    <div class="container">
-        @yield('weibo_content')
-    </div>
+@section('footer_js')
+    @include('weibo.layouts._footer_js')
 @stop

@@ -1,9 +1,5 @@
 @extends('weibo.layouts.default')
 
-@section('head')
-<link rel="stylesheet" href="{{ mix('css/app.css') }}">
-@stop
-
 @section('weibo_content')
     <div class="jumbotron">
         <h1>Hello Laravel</h1>
