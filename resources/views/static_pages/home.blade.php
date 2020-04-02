@@ -17,7 +17,7 @@
             下面是各个 laravel 示例项目
         </p>
         <p>
-            <a href="{{ route('weibo') }}">微博</a>
+            <a href="{{ route('weibo.home') }}">微博</a>
         </p>
     </div>
 @stop
