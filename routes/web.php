@@ -22,3 +22,7 @@ Route::get('/about', 'StaticPagesController@about')->name('about');
 Route::namespace('Weibo')->group(function () {
     Route::get('/weibo', 'WeiboController@home')->name('weibo');
 });
+
+
+# 用户
+Route::get('/register','UsersController@create')->name('register');

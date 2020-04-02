@@ -1,4 +1,5 @@
 @extends('layouts.default')
+@section('title', '微博')
 
 @section('head')
     @include('weibo.layouts._head')
