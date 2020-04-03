@@ -19,10 +19,11 @@ Route::get('/help', 'StaticPagesController@help')->name('help');
 Route::get('/about', 'StaticPagesController@about')->name('about');
 
 # 微博
-Route::namespace('Weibo')->group(function () {
-    Route::get('/weibo', 'WeiboController@home')->name('weibo');
+Route::namespace('weibo')->prefix('/weibo')->name('weibo.')->group(function () {
+    Route::get('/', 'WeiboController@home')->name('home');
 });
 
 
 # 用户
 Route::get('/register','UsersController@create')->name('register');
+Route::resource('users','UsersController');

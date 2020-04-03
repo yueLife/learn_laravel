@@ -5,9 +5,9 @@
     @include('weibo.layouts._head')
 @stop
 
-@section('header')
-    @include('weibo.layouts._header')
-@stop
+{{-- header --}}
+@section('header_index', route('weibo.home'))
+@section('header_title', '微博首页')
 
 @section('content')
     @yield('weibo_content')
