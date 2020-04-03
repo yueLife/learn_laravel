@@ -19,7 +19,7 @@ Route::get('/help', 'StaticPagesController@help')->name('help');
 Route::get('/about', 'StaticPagesController@about')->name('about');
 
 # 微博
-Route::namespace('weibo')->prefix('/weibo')->name('weibo.')->group(function () {
+Route::namespace('Weibo')->prefix('/weibo')->name('weibo.')->group(function () {
     Route::get('/', 'WeiboController@home')->name('home');
 });
 
