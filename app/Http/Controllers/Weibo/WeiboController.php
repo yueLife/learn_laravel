@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class WeiboController extends Controller
 {
     /**
-     * 网站微博页面首页
+     * 网站微博首页
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      * @author: Zyj
@@ -16,6 +16,6 @@ class WeiboController extends Controller
      */
     public function home()
     {
-        return view("Weibo/home");
+        return view("weibo/home");
     }
 }
