@@ -2,7 +2,7 @@
 @section('title', '微博')
 
 @section('head')
-    @include('weibo.layouts._head')
+    @include('weibo._head')
 @stop
 
 {{-- header --}}
@@ -14,5 +14,5 @@
 @stop
 
 @section('footer_js')
-    @include('weibo.layouts._footer_js')
+    @include('weibo._footer_js')
 @stop

@@ -1,4 +1,4 @@
-@extends('weibo.layouts.default')
+@extends('weibo.default')
 
 @section('weibo_content')
     <div class="jumbotron">
